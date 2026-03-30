@@ -2097,4 +2097,19 @@
 @media (max-width: 600px) {
   .loyalty-teaser__inner { gap: var(--space-2); }
   .loyalty-modal__box { padding: var(--space-6) var(--space-5); }
+  .loyalty-tier {
+    flex-wrap: wrap;
+    gap: var(--space-2);
+  }
+  .loyalty-tier__left {
+    flex-shrink: 1;
+    min-width: 0;
+  }
+  .loyalty-tier__name {
+    white-space: normal;
+  }
+  .loyalty-tier__perks {
+    flex-shrink: 1;
+    text-align: left;
+  }
 }
