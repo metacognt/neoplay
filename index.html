@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NeoPlay — Компьютерный клуб в Нижнем Новгороде</title>
+  <meta name="description" content="Компьютерный клуб NeoPlay — 25 ПК, Bootcamp VIP 2K 320 Гц, PlayStation 5. Круглосуточно. Нижний Новгород, ул. Замкнутая, 26А.">
+
+  <meta property="og:title" content="NeoPlay — Компьютерный клуб">
+  <meta property="og:description" content="25 ПК, Bootcamp, PS5. Мониторы 240/320 Гц. Круглосуточно. Нижний Новгород.">
+  <meta property="og:type" content="website">
+
+  <link href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600,700&f[]=clash-display@500,600,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./base.css">
+  <link rel="stylesheet" href="./style.css">
+
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230a0a12'/%3E%3Cpath d='M8 10h5v12H8zM19 10h5v12h-5z' fill='%236366f1' opacity='.9'/%3E%3Crect x='13' y='14' width='6' height='4' rx='1' fill='%23a78bfa'/%3E%3C/svg%3E">
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="header" id="header">
+    <div class="header__inner">
+      <a href="#" class="header__logo" aria-label="NeoPlay — на главную">
+        <img src="./assets/logo-full-3.png" alt="NeoPlay" height="32" class="header__logo-img header__logo-img--full">
+      </a>
+
+      <nav class="header__nav" aria-label="Основная навигация">
+        <a href="./gallery.html" class="header__link">Галерея</a>
+        <a href="./games.html" class="header__link">Список игр</a>
+        <a href="./faq.html" class="header__link">FAQ</a>
+        <a href="./rules.html" class="header__link">Правила</a>
+        <a href="#contacts" class="header__link">Контакты</a>
+      </nav>
+
+      <a href="https://langame.ru/799452864_computerniy_club_neoplay_nizhniy_novgorod" target="_blank" rel="noopener noreferrer" class="header__cta">Забронировать</a>
+
+      <button class="header__burger" aria-label="Меню" aria-expanded="false" id="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile nav -->
+  <div class="mobile-nav" id="mobileNav" aria-hidden="true">
+    <nav class="mobile-nav__inner">
+      <a href="./gallery.html" class="mobile-nav__link">Галерея</a>
+      <a href="./games.html" class="mobile-nav__link">Список игр</a>
+      <a href="./faq.html" class="mobile-nav__link">FAQ</a>
+      <a href="./rules.html" class="mobile-nav__link">Правила</a>
+      <a href="#contacts" class="mobile-nav__link">Контакты</a>
+      <a href="https://langame.ru/799452864_computerniy_club_neoplay_nizhniy_novgorod" target="_blank" rel="noopener noreferrer" class="mobile-nav__cta">Забронировать</a>
+    </nav>
+  </div>
+
+  <main>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="hero">
+      <div class="hero__bg" aria-hidden="true">
+        <div class="hero__glow hero__glow--1"></div>
+        <div class="hero__glow hero__glow--2"></div>
+      </div>
+      <div class="hero__content">
+       <h1 class="hero__title">
+         <span class="hero_title">
+           <img src="./assets/logo500.png" alt="" class="hero_title-logo">
+           <span>NEOPLAY</span>
+         </span>
+         <span class="hero__title-line">Твоё место.</span>
+         <span class="hero__title-line hero__title-line--accent">В любое время.</span>
+       </h1>
+        <p class="hero__sub">Компьютерный клуб в Нижнем Новгороде</p>
+        <p class="hero__stats">25 ПК &middot; Bootcamp &middot; PlayStation&nbsp;5 &middot; 24/7</p>
+        <div class="hero__actions">
+          <a href="https://langame.ru/799452864_computerniy_club_neoplay_nizhniy_novgorod" target="_blank" rel="noopener noreferrer" class="btn btn--primary btn--book">
+            <span class="btn__main">Забронировать 🖥</span>
+            <span class="btn__sub">со скидкой 10%</span>
+          </a>
+          <a href="#prices" class="btn btn--ghost">Смотреть цены 💲</a>
+        </div>
+      </div>
+      <div class="hero__scroll" aria-hidden="true">
+        <svg width="20" height="30" viewBox="0 0 20 30" fill="none" stroke="currentColor" stroke-width="1.5">
+          <rect x="1" y="1" width="18" height="28" rx="9"/>
+          <line x1="10" y1="7" x2="10" y2="13" class="hero__scroll-dot"/>
+        </svg>
+      </div>
+    </section>
+
+    <!-- ===== PROMOS MARQUEE ===== -->
+    <section class="promos-marquee" id="promos">
+      <div class="promos-marquee__track" aria-label="Акции">
+        <div class="promos-marquee__items">
+          <span class="marquee-item">
+            <span class="marquee-item__badge">Акция</span>
+            <span class="marquee-item__icon">&#127873;</span>
+            500 бонусов новым гостям за регистрацию
+          </span>
+          <span class="marquee-sep" aria-hidden="true">&middot;</span>
+          <span class="marquee-item">
+            <span class="marquee-item__badge">Акция</span>
+            <span class="marquee-item__icon">&#128663;</span>
+            Вернём до 500 ₽ за такси, каршеринг или самокат
+          </span>
+          <span class="marquee-sep" aria-hidden="true">&middot;</span>
+          <span class="marquee-item">
+            <span class="marquee-item__badge">Акция</span>
+            <span class="marquee-item__icon">&#9889;</span>
+            Энергетик Gorilla в подарок при покупке пакета «Ночь»
+          </span>
+          <span class="marquee-sep" aria-hidden="true">&middot;</span>
+        </div>
+        <!-- duplicate for seamless loop -->
+        <div class="promos-marquee__items" aria-hidden="true">
+          <span class="marquee-item">
+            <span class="marquee-item__badge">Акция</span>
+            <span class="marquee-item__icon">&#127873;</span>
+            500 бонусов новым гостям за регистрацию
+          </span>
+          <span class="marquee-sep" aria-hidden="true">&middot;</span>
+          <span class="marquee-item">
+            <span class="marquee-item__badge">Акция</span>
+            <span class="marquee-item__icon">&#128663;</span>
+            Вернём до 500 ₽ за такси, каршеринг или самокат
+          </span>
+          <span class="marquee-sep" aria-hidden="true">&middot;</span>
+          <span class="marquee-item">
+            <span class="marquee-item__badge">Акция</span>
+            <span class="marquee-item__icon">&#9889;</span>
+            Энергетик Gorilla в подарок при покупке пакета «Ночь»
+          </span>
+          <span class="marquee-sep" aria-hidden="true">&middot;</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FEED ===== -->
+    <section class="section" id="feed">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__label">Лента</span>
+          <h2 class="section__title">Что нового?</h2>
+        </div>
+
+        <div class="feed-grid">
+
+          <!-- Featured: Tournament -->
+          <article class="feed-card feed-card--featured">
+            <div class="feed-card__tag feed-card__tag--tournament">
+              <span class="feed-card__dot" aria-hidden="true"></span>Турнир
+            </div>
+            <div class="feed-card__body">
+              <time class="feed-card__date" datetime="2026-04-06">21 апреля 2026</time>
+              <h3 class="feed-card__title">NeoPlay Cup #1</h3>
+              <p class="feed-card__text">Подробности - совсем скоро!</p>
+              <a href="#contacts" class="feed-card__cta">Узнать подробности →</a>
+            </div>
+          </article>
+
+          <!-- Side: New -->
+          <article class="feed-card feed-card--sm">
+            <div class="feed-card__tag feed-card__tag--new">Новинка</div>
+            <time class="feed-card__date" datetime="2026-03-30">30 марта 2026</time>
+            <h3 class="feed-card__title">Одиночная комната  -  уже на подходе!</h3>
+            <p class="feed-card__text">Запуск SOLO зоны состоится уже в ближайшие дни.</p>
+          </article>
+
+          <!-- Side: Update -->
+          <article class="feed-card feed-card--sm">
+            <div class="feed-card__tag feed-card__tag--update">Обновление</div>
+            <time class="feed-card__date" datetime="2026-03-22">22 марта 2026</time>
+            <h3 class="feed-card__title">Небольшие улучшения в Standart зоне</h3>
+            <p class="feed-card__text">Постепенно дорабатываем Standart зону: новые наушники и кронштейны для мониторов - это только начало...</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ZONES ===== -->
+    <section class="section" id="zones">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__label">Зоны</span>
+          <h2 class="section__title">Выбери свой формат</h2>
+        </div>
+
+        <div class="zones-wrapper">
+          <div class="zones-wrapper">
+          <div class="zones">
+          <!-- Standart -->
+          <div class="zone-card">
+            <div class="zone-card__img">
+              <img src="./assets/photo-1.jpeg" alt="Основной зал NeoPlay — игровые ПК с RGB подсветкой" loading="lazy" width="600" height="400">
+            </div>
+            <div class="zone-card__body">
+              <div class="zone-card__badge">Standart</div>
+              <h3 class="zone-card__title">Основной зал</h3>
+              <ul class="zone-card__specs" role="list">
+                <li><strong>GPU</strong> RTX 3060 Ti</li>
+                <li><strong>CPU</strong> i5-12400F</li>
+                <li><strong>RAM</strong> 16 ГБ DDR4</li>
+                <li><strong>Монитор</strong> 240 Гц 24"</li>
+              </ul>
+              <div class="zone-card__peripheral">
+                <button class="zone-card__peripheral-toggle" aria-expanded="false">
+                  <span>Периферия</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                </button>
+                <div class="zone-card__peripheral-content" aria-hidden="true">
+                  <div class="zone-card__peripheral-inner">
+                    <ul class="zone-card__peripheral-list" role="list">
+                      <li><strong>Мышь</strong> Ardor Blade / Razer Cobra</li>
+                      <li><strong>Клав.</strong> Ardor Blade Pro / Red Square Encore</li>
+                      <li><strong>Наушники</strong> Razer BlackShark V2 X / Ardor Edge</li>
+                      <li><strong>Монитор</strong> Acer 240 Гц FullHD IPS 24"</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bootcamp -->
+          <div class="zone-card zone-card--vip">
+            <div class="zone-card__img">
+              <img src="./assets/photo-2.jpeg" alt="Bootcamp зона NeoPlay — премиум игровые станции" loading="lazy" width="600" height="400">
+            </div>
+            <div class="zone-card__body">
+              <div class="zone-card__badge zone-card__badge--vip">Bootcamp</div>
+              <h3 class="zone-card__title">Премиум зона</h3>
+              <ul class="zone-card__specs" role="list">
+                <li><strong>GPU</strong> RTX&nbsp;4070&nbsp;Super</li>
+                <li><strong>CPU</strong> i5-13400F</li>
+                <li><strong>RAM</strong> 32&nbsp;ГБ DDR4</li>
+                <li><strong>Монитор</strong> 320&nbsp;Гц&nbsp;27"&nbsp;2K</li>
+              </ul>
+              <div class="zone-card__peripheral">
+                <button class="zone-card__peripheral-toggle" aria-expanded="false">
+                  <span>Периферия</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                </button>
+                <div class="zone-card__peripheral-content" aria-hidden="true">
+                  <div class="zone-card__peripheral-inner">
+                    <ul class="zone-card__peripheral-list" role="list">
+                      <li><strong>Мышь</strong> Ardor / Ajazz / ATK / Attack Shark</li>
+                      <li><strong>Клав.</strong> Red Square Alumix TKL SE</li>
+                      <li><strong>Наушники</strong> LANGAME</li>
+                      <li><strong>Монитор</strong> MSI 320 Гц 2K FastIPS 27"</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- PS5 -->
+          <div class="zone-card">
+            <div class="zone-card__img">
+              <img src="./assets/photo-3.jpeg" alt="PlayStation зона — PS5, диван, большой экран" loading="lazy" width="600" height="400">
+            </div>
+            <div class="zone-card__body">
+              <div class="zone-card__badge">PlayStation 5</div>
+              <h3 class="zone-card__title">Отдельная комната</h3>
+              <ul class="zone-card__specs" role="list">
+                <li><strong>Формат</strong> Приватная зона</li>
+                <li><strong>Экран</strong> Большой ТВ</li>
+                <li><strong>Диван</strong> Для компании</li>
+                <li><strong>Свет</strong> Неоновый</li>
+              </ul>
+              <div class="zone-card__peripheral">
+                <button class="zone-card__peripheral-toggle" aria-expanded="false">
+                  <span>Периферия</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                </button>
+                <div class="zone-card__peripheral-content" aria-hidden="true">
+                  <div class="zone-card__peripheral-inner">
+                    <ul class="zone-card__peripheral-list" role="list">
+                      <li><strong>Диван</strong> До 5 человек</li>
+                      <li><strong>Контроллеры</strong> 2 шт.</li>
+                      <li><strong>Экран</strong> 4K телевизор</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PRICES ===== -->
+    <section class="section section--alt" id="prices">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__label">Цены</span>
+          <h2 class="section__title">Тарифы</h2>
+          <p class="section__desc">День ☀ 12:00–16:00 &middot; Ночь 🌙 22:00–8:00</p>
+        </div>
+
+        <!-- ===== LOYALTY TEASER ===== -->
+        <div class="loyalty-teaser loyalty-teaser--inline">
+          <div class="loyalty-teaser__inner">
+            <span class="loyalty-teaser__icon" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </span>
+            <p class="loyalty-teaser__text">
+              <strong>Система лояльности</strong> — мелочь, а приятно. 
+            </p>
+            <button class="loyalty-teaser__btn" id="loyaltyTeaserBtn" aria-haspopup="dialog" aria-controls="loyaltyModal">
+              Подробнее <span aria-hidden="true">→</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- STANDART -->
+        <div class="price-zone">
+          <h3 class="price-zone__title">Standart</h3>
+          <p class="price-zone__sub">RTX 3060 Ti &middot; 240 Гц FullHD</p>
+
+          <div class="price-tables">
+            <div class="price-table">
+              <div class="price-table__label">Будни</div>
+              <div class="price-table__section">
+                <span class="price-table__section-title">Почасовой</span>
+                <div class="price-table__grid">
+                  <div class="price-cell">
+                    <span class="price-cell__name">1 час <span class="price-cell__hint">8:00–17:00</span></span>
+                    <span class="price-cell__val">110 ₽</span>
+                  </div>
+                  <div class="price-cell">
+                    <span class="price-cell__name">1 час <span class="price-cell__hint">17:00–8:00</span></span>
+                    <span class="price-cell__val">140 ₽</span>
+                  </div>
+                  <div class="price-cell">
+                    <span class="price-cell__name">3 часа</span>
+                    <span class="price-cell__val">350 ₽</span>
+                  </div>
+                  <div class="price-cell">
+                    <span class="price-cell__name">5 часов</span>
+                    <span class="price-cell__val">490 ₽</span>
+                  </div>
+                </div>
+              </div>
+              <div class="price-table__section">
+                <span class="price-table__section-title">Пакет</span>
+                <div class="price-table__grid">
+                  <div class="price-cell">
+                    <span class="price-cell__name">День ☀</span>
+                    <span class="price-cell__val">370 ₽</span>
+                  </div>
+                  <div class="price-cell">
+                    <span class="price-cell__name">Ночь 🌙</span>
+                    <span class="price-cell__val">600 ₽</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="price-table">
+              <div class="price-table__label price-table__label--weekend">Выходные</div>
+              <div class="price-table__section">
+                <span class="price-table__section-title">Почасовой</span>
+                <div class="price-table__grid">
+                  <div class="price-cell">
+                    <span class="price-cell__name">1 час <span class="price-cell__hint">8:00–17:00</span></span>
+                    <span class="price-cell__val">120 ₽</span>
+                  </div>
+                  <div class="price-cell">
+                    <span class="price-cell__name">1 час <span class="price-cell__hint">17:00–8:00</span></span>
+                    <span class="price-cell__val">150 ₽</span>
+                  </div>
+                  <div class="price-cell">
+                    <span class="price-cell__name">3 часа</span>
+                    <span class="price-cell__val">380 ₽</span>
+                  </div>
+                  <div class="price-cell">
+                    <span class="price-cell__name">5 часов</span>
+                    <span class="price-cell__val">510 ₽</span>
+                  </div>
+                </div>
+              </div>
+              <div class="price-table__section">
+                <span class="price-table__section-title">Пакет</span>
+                <div class="price-table__grid">
+                  <div class="price-cell">
+                    <span class="price-cell__name">День ☀</span>
+                    <span class="price-cell__val">400 ₽</span>
+                  </div>
+                  <div class="price-cell">
+                    <span class="price-cell__name">Ночь 🌙</span>
+                    <span class="price-cell__val">650 ₽</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- BOOTCAMP -->
+        <div class="price-zone price-zone--vip">
+          <div class="price-zone__accent" aria-hidden="true"></div>
+          <h3 class="price-zone__title">Bootcamp</h3>
+          <p class="price-zone__sub">RTX 4070 Super &middot; 320 Гц 2K</p>
+
+          <div class="price-tables">
+            <div class="price-table">
+              <div class="price-table__label">Будни</div>
+              <div class="price-table__section">
+                <span class="price-table__section-title">Пакет</span>
+                <div class="price-table__grid">
+                  <div class="price-cell">
+                    <span class="price-cell__name">1 час</span>
+                    <span class="price-cell__val">180 ₽</span>
+                  </div>
+                  <div class="price-cell">
+                    <span class="price-cell__name">3 часа</span>
+                    <span class="price-cell__val">490 ₽</span>
+                  </div>
+                  <div class="price-cell">
+                    <span class="price-cell__name">5 часов</span>
+                    <span class="price-cell__val">750 ₽</span>
+                  </div>
+                  <div class="price-cell">
+                    <span class="price-cell__name">День ☀</span>
+                    <span class="price-cell__val">430 ₽</span>
+                  </div>
+                  <div class="price-cell">
+                    <span class="price-cell__name">Ночь 🌙</span>
+                    <span class="price-cell__val">800 ₽</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="price-table">
+              <div class="price-table__label price-table__label--weekend">Выходные</div>
+              <div class="price-table__section">
+                <span class="price-table__section-title">Пакет</span>
+                <div class="price-table__grid">
+                  <div class="price-cell">
+                    <span class="price-cell__name">1 час</span>
+                    <span class="price-cell__val">190 ₽</span>
+                  </div>
+                  <div class="price-cell">
+                    <span class="price-cell__name">3 часа</span>
+                    <span class="price-cell__val">520 ₽</span>
+                  </div>
+                  <div class="price-cell">
+                    <span class="price-cell__name">5 часов</span>
+                    <span class="price-cell__val">790 ₽</span>
+                  </div>
+                  <div class="price-cell">
+                    <span class="price-cell__name">День ☀</span>
+                    <span class="price-cell__val">450 ₽</span>
+                  </div>
+                  <div class="price-cell">
+                    <span class="price-cell__name">Ночь 🌙</span>
+                    <span class="price-cell__val">850 ₽</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- PS5 -->
+        <div class="price-zone">
+          <h3 class="price-zone__title">PlayStation 5</h3>
+          <p class="price-zone__sub">Отдельная комната &middot; Ночь 🌙 22:00–8:00</p>
+
+          <div class="price-tables">
+            <div class="price-table price-table--full">
+              <div class="price-table__label">Будни / Выходные</div>
+              <div class="price-table__section">
+                <div class="price-table__grid">
+                  <div class="price-cell">
+                    <span class="price-cell__name">1 час</span>
+                    <span class="price-cell__val">250 ₽</span>
+                  </div>
+                  <div class="price-cell">
+                    <span class="price-cell__name">3 часа</span>
+                    <span class="price-cell__val">600 ₽</span>
+                  </div>
+                  <div class="price-cell">
+                    <span class="price-cell__name">5 часов</span>
+                    <span class="price-cell__val">780 ₽</span>
+                  </div>
+                  <div class="price-cell">
+                    <span class="price-cell__name">Ночь 🌙</span>
+                    <span class="price-cell__val">800 ₽</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="prices__cta">
+          <a href="https://langame.ru/799452864_computerniy_club_neoplay_nizhniy_novgorod" target="_blank" rel="noopener noreferrer" class="btn btn--primary">Забронировать место</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACTS ===== -->
+    <section class="section" id="contacts">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__label">Контакты</span>
+          <h2 class="section__title">Как нас найти?</h2>
+        </div>
+
+        <div class="contacts">
+          <div class="contacts__info">
+            <div class="contacts__block">
+              <h3 class="contacts__label">Адрес</h3>
+              <p class="contacts__value">г. Нижний Новгород<br>ул. Замкнутая, 26А<br>2 этаж</p>
+              <p class="club-status">
+                <span class="club-status__dot" aria-hidden="true"></span>
+                Открыто · 24/7
+              </p>
+            </div>
+            <div class="contacts__block">
+              <h3 class="contacts__label">Телефон клуба</h3>
+              <p class="contacts__value">
+                <a href="tel:+79308138697" class="contacts__link">+7 930 813-86-97</a>
+              </p>
+            </div>
+            <div class="contacts__block">
+              <h3 class="contacts__label">Режим работы</h3>
+              <p class="contacts__value">Круглосуточно, 24/7</p>
+            </div>
+            <div class="contacts__block">
+              <h3 class="contacts__label">Соцсети</h3>
+              <div class="contacts__socials">
+                <a href="https://t.me/neoplayclub" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Telegram">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.479.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+                  <span>Telegram</span>
+                </a>
+                <a href="https://vk.com/neoplaynnclub" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="ВКонтакте">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M15.684 0H8.316C1.592 0 0 1.592 0 8.316v7.368C0 22.408 1.592 24 8.316 24h7.368C22.408 24 24 22.408 24 15.684V8.316C24 1.592 22.391 0 15.684 0zm3.692 17.123h-1.744c-.66 0-.864-.525-2.05-1.727-1.033-1-1.49-1.135-1.744-1.135-.356 0-.458.102-.458.593v1.575c0 .424-.135.678-1.253.678-1.846 0-3.896-1.118-5.335-3.202C4.624 10.857 4.03 8.57 4.03 8.096c0-.254.102-.491.593-.491h1.744c.44 0 .61.203.78.678.863 2.49 2.303 4.675 2.896 4.675.22 0 .322-.102.322-.66V9.721c-.068-1.186-.695-1.287-.695-1.71 0-.203.17-.407.44-.407h2.744c.373 0 .508.203.508.643v3.473c0 .372.17.508.271.508.22 0 .407-.136.813-.542 1.27-1.422 2.18-3.61 2.18-3.61.119-.254.322-.491.763-.491h1.744c.525 0 .644.27.525.643-.22 1.017-2.354 4.031-2.354 4.031-.186.305-.254.44 0 .78.186.254.796.779 1.203 1.253.745.847 1.32 1.558 1.473 2.05.17.49-.085.744-.576.744z"/></svg>
+                  <span>ВКонтакте</span>
+                </a>
+              </div>
+            </div>
+
+            <div class="contacts__actions">
+              <a href="https://yandex.ru/maps/org/neoplay/44683795334/" target="_blank" rel="noopener noreferrer" class="btn btn--ghost">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                  <circle cx="12" cy="10" r="3"/>
+                </svg>
+                Открыть на карте
+              </a>
+              <a href="https://langame.ru/799452864_computerniy_club_neoplay_nizhniy_novgorod" target="_blank" rel="noopener noreferrer" class="btn btn--primary">Забронировать</a>
+            </div>
+          </div>
+
+          <div class="contacts__map">
+            <iframe
+              src="https://yandex.ru/map-widget/v1/?ll=43.848853%2C56.356318&z=16&mode=search&oid=44683795334&ol=biz"
+              width="100%"
+              height="400"
+              frameborder="0"
+              allowfullscreen
+              title="NeoPlay на Яндекс.Картах"
+              loading="lazy"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== LOYALTY MODAL ===== -->
+  <div class="loyalty-modal" id="loyaltyModal" role="dialog" aria-modal="true" aria-labelledby="loyaltyModalTitle" aria-hidden="true">
+    <div class="loyalty-modal__backdrop" id="loyaltyModalBackdrop"></div>
+    <div class="loyalty-modal__box">
+      <button class="loyalty-modal__close" id="loyaltyModalClose" aria-label="Закрыть">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+      <div class="loyalty-modal__header">
+        <div class="loyalty-modal__icon-wrap" aria-hidden="true">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        </div>
+        <h2 id="loyaltyModalTitle" class="loyalty-modal__title">Что по бонусам?</h2>
+        <p class="loyalty-modal__sub">Лояльность — наше всё.</p>
+      </div>
+
+      <div class="loyalty-modal__steps">
+        <div class="loyalty-step">
+          <div class="loyalty-step__num" aria-hidden="true">1</div>
+          <div class="loyalty-step__body">
+            <h3 class="loyalty-step__title">Регистрируйся</h3>
+            <p class="loyalty-step__text">Создай аккаунт при первом посещении — получи <strong>500 бонусов</strong> сразу.</p>
+          </div>
+        </div>
+        <div class="loyalty-step">
+          <div class="loyalty-step__num" aria-hidden="true">2</div>
+          <div class="loyalty-step__body">
+            <h3 class="loyalty-step__title">Играй</h3>
+            <p class="loyalty-step__text">Бонусы начисляются за покупку всех тарифов. Больше времени в клубе - больше процент начисления.</p>
+          </div>
+        </div>
+        <div class="loyalty-step">
+          <div class="loyalty-step__num" aria-hidden="true">3</div>
+          <div class="loyalty-step__body">
+            <h3 class="loyalty-step__title">Трать бонусы</h3>
+            <p class="loyalty-step__text">Бонусами можно оплатить до 50% стоимости любого тарифа. <strong>1 бонус = 1 рубль.</strong></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="loyalty-modal__perks">
+        <div class="loyalty-perk">
+          <span>А ещё...</span>
+        </div>
+        <div class="loyalty-perk">
+          <span class="loyalty-perk__icon" aria-hidden="true">🎁</span>
+          <span>Скидка 10% за онлайн бронирование</span>
+        </div>
+        <div class="loyalty-perk">
+          <span class="loyalty-perk__icon" aria-hidden="true">🚕</span>
+          <span>До 500 ₽ компенсации за такси или каршеринг</span>
+        </div>
+        <div class="loyalty-perk">
+          <span class="loyalty-perk__icon" aria-hidden="true">⚡</span>
+          <span>Энергетик Gorilla в подарок при покупке пакета «Ночь»</span>
+        </div>
+      </div>
+
+      <div class="loyalty-tiers">
+        <h3 class="loyalty-tiers__title">Уровни лояльности</h3>
+
+        <div class="loyalty-tier loyalty-tier--1">
+          <div class="loyalty-tier__left">
+            <span class="loyalty-tier__icon" aria-hidden="true">🪑</span>
+            <div>
+              <div class="loyalty-tier__name">Засел</div>
+              <div class="loyalty-tier__threshold">от 50 часов</div>
+            </div>
+          </div>
+          <ul class="loyalty-tier__perks">
+            <li>5% кэшбэк бонусами</li>
+          </ul>
+        </div>
+
+        <div class="loyalty-tier loyalty-tier--2">
+          <div class="loyalty-tier__left">
+            <span class="loyalty-tier__icon" aria-hidden="true">🔒</span>
+            <div>
+              <div class="loyalty-tier__name">Не выселить</div>
+              <div class="loyalty-tier__threshold">от 150 часов</div>
+            </div>
+          </div>
+          <ul class="loyalty-tier__perks">
+            <li>7% кэшбэк бонусами</li>
+          </ul>
+        </div>
+
+        <div class="loyalty-tier loyalty-tier--3">
+          <div class="loyalty-tier__left">
+            <span class="loyalty-tier__icon" aria-hidden="true">🖥</span>
+            <div>
+              <div class="loyalty-tier__name">Сам пробью тариф</div>
+              <div class="loyalty-tier__threshold">от 300 часов</div>
+            </div>
+          </div>
+          <ul class="loyalty-tier__perks">
+            <li>7% кэшбэк бонусами</li>
+            <li>7% скидка на тарифы</li>
+            <li>500 бонусов в ДР</li>
+          </ul>
+        </div>
+
+        <div class="loyalty-tier loyalty-tier--4">
+          <div class="loyalty-tier__glow" aria-hidden="true"></div>
+          <div class="loyalty-tier__left">
+            <span class="loyalty-tier__icon" aria-hidden="true">👑</span>
+            <div>
+              <div class="loyalty-tier__name">Прописан на Замкнутой</div>
+              <div class="loyalty-tier__threshold">от 500 часов</div>
+            </div>
+          </div>
+          <ul class="loyalty-tier__perks">
+            <li>10% кэшбэк бонусами</li>
+            <li>10% скидка на тарифы</li>
+            <li>1000 бонусов в ДР</li>
+          </ul>
+        </div>
+      </div>
+
+      <button class="loyalty-modal__dismiss" id="loyaltyModalDismiss">Неплохо!</button>
+    </div>
+  </div>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <img src="./assets/logo-icon.png" alt="NeoPlay" width="28" height="28" class="footer__logo-img">
+        <span>NEOPLAY</span>
+      </div>
+      <div class="footer__socials">
+        <a href="https://t.me/neoplayclub" target="_blank" rel="noopener noreferrer" aria-label="Telegram">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.479.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+        </a>
+        <a href="https://vk.com/neoplaynnclub" target="_blank" rel="noopener noreferrer" aria-label="ВКонтакте">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M15.684 0H8.316C1.592 0 0 1.592 0 8.316v7.368C0 22.408 1.592 24 8.316 24h7.368C22.408 24 24 22.408 24 15.684V8.316C24 1.592 22.391 0 15.684 0zm3.692 17.123h-1.744c-.66 0-.864-.525-2.05-1.727-1.033-1-1.49-1.135-1.744-1.135-.356 0-.458.102-.458.593v1.575c0 .424-.135.678-1.253.678-1.846 0-3.896-1.118-5.335-3.202C4.624 10.857 4.03 8.57 4.03 8.096c0-.254.102-.491.593-.491h1.744c.44 0 .61.203.78.678.863 2.49 2.303 4.675 2.896 4.675.22 0 .322-.102.322-.66V9.721c-.068-1.186-.695-1.287-.695-1.71 0-.203.17-.407.44-.407h2.744c.373 0 .508.203.508.643v3.473c0 .372.17.508.271.508.22 0 .407-.136.813-.542 1.27-1.422 2.18-3.61 2.18-3.61.119-.254.322-.491.763-.491h1.744c.525 0 .644.27.525.643-.22 1.017-2.354 4.031-2.354 4.031-.186.305-.254.44 0 .78.186.254.796.779 1.203 1.253.745.847 1.32 1.558 1.473 2.05.17.49-.085.744-.576.744z"/></svg>
+        </a>
+      </div>
+      <nav class="footer__links" aria-label="Документы">
+        <a href="./oferta.html" class="footer__link">Публичная оферта</a>
+        <a href="./rules.html" class="footer__link">Правила посещения</a>
+        <a href="./faq.html" class="footer__link">FAQ</a>
+        <a href="./games.html" class="footer__link">Список игр</a>
+      </nav>
+      <p class="footer__copy">ИП Пак В.С. &middot; ИНН 525716840302 &middot; ОГРНИП 325527500170852</p>
+      <p class="footer__copy">&copy; 2025–2026 NeoPlay. Все права защищены.</p>
+    </div>
+  </footer>
+
+  <script src="./app.js" defer></script>
+</body>
+</html>
